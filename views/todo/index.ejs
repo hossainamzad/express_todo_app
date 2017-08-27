@@ -1,0 +1,14 @@
+  <a href="/todo/add">Add Todo</a>
+  <% for (let todo of data) { %>
+    <div>
+      <h1><%= todo.title %></h1>
+      <a href='/todo/<%= todo.id%>'>Learn more</a>
+    </div>
+
+    <form action="/todo/<%= todo.id %>?_method=Delete " method="Post">
+      <input type="Submit" value="Delete"/>
+    </form>
+  <% } %>
+
+
+

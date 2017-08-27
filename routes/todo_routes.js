@@ -9,7 +9,11 @@ const todoController = require('../controllers/todo_controller');
 // '/', we are calling the controller action for findAll
 // todos actions.
 router.get ('/', todoController.index);
+router.post('/', todoController.create);
+
+router.get('/add', (req, res) => {
+  res.render('todo/todo_add');
+});
 router.get ('/:id', todoController.show);
-
-
+router.delete('/:id', todoController.delete);
 module.exports = router;
