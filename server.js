@@ -36,7 +36,7 @@ app.listen(port, () => {
 
 // Our welcome route!
  app.get('/', (req, res) => {
-   res.render('welcome', { message : "Hello from welcome."});
+   res.render('welcome', { message : "Hello.."});
  });
 // todo routes
 app.use('/todo', router);
