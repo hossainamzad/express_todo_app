@@ -1,23 +1,30 @@
 body{
-  display: flex;
-  background-color: lightgreen;
+  background-color: grey;
 }
 header{
   display: flex;
   text-align: center;
+  width: 100%;
 }
-#logo{
-  display: flex;
+#welcome{
+  border: 2px solid black;
+  margin: 300px;
+}
+
+ #logo{
+  flex:left;
+  width:10%;
   font-size: 20px;
-  font-variant: bold;
   margin-top: 30px;
 }
-ul li{
-   display: flex;
-  font-size: 20px;
-  font-variant: bold;
-  margin-top: 30px;
+
+#nav{
+   width:85%;
 }
+#nav ul li{
+   display:inline-block;
+}
+
 section{
   margin-top: 40px;
   width: 200px;
